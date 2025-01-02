@@ -5,7 +5,6 @@ while True:
     print("Invalid input. Try again.")
 
 user_birth_year = int(user_birth_year)  # Convert the inputted string to an integer
-
 # A dictionary that assigns a corresponding generation to each birth year range
 gens = {
     'Generation Alpha': range(2010, 2026),
@@ -15,11 +14,9 @@ gens = {
     'Baby Boomer': range(1946, 1965),
     'The Silent Generation': range(1928, 1946)
 }
-
 # To loop through the items in each 'gen' and find the right fit
 for gen, years in gens.items():
     if user_birth_year in years:
         print(f"You are part of {gen}.")
-        break
 else:
     print("Your birth year does not fall into a defined generation.")
